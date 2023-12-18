@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="container">
+        <div class="login-link">
+            <div class="logo">
+                <i class='bx bxs-pencil'></i>
+                <span class="text">Logo name</span>
+            </div>
+            <p class="side-big-heading">Create a account</p>
+            <p class="primary bg text">To keep on your dashboard please login
+                with your personal info
+            </p>
+            <a href="index.html" class="loginbtn">Register Now</a>
+        </div>
+        <form action="index.html" method="post"  class="signup-form-container">
+            <P class="big-heading">Login to your account</P>
+            <div class="social-media-platform">
+                <a href="#"><i class='bx bx-sm bxl-facebook'></i></a>
+                <a href="#"><i class='bx bx-sm bxl-twitter'></i></a>
+                <a href="#"><i class='bx bx-sm bxl-github'></i></a>
+            </div>
+            <div class="login-form-container">
+                <div class="text-fields email">
+                    <label for="email"><i class='bx bxs-envelope'></i></label>
+                    <input type="email" name="email" id="email"  placeholder="enter your email id" required>
+                   </div>
+                   <div class="text-fields password">
+                    <label for="password"><i class='bx bx-lock-alt'></i></label>
+                    <input type="password" name="password" id="password" placeholder="your password" required>
+                </div>
+            </div>
+            <input type="submit" value="login" class="stagebtn1a" onclick="redirectToIndex()">
+        </form>
+    </body>
+    <script>
+        function redirectToIndex() {
+          window.location.href = "index.html";
+        }
+      </script>
+      
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</html>
